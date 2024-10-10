@@ -1,0 +1,94 @@
+/* Variables de colores */
+:root {
+    --morado: #6A0DAD;  /* Morado oscuro */
+    --negro: #000000;   /* Negro */
+    --blanco: #FFFFFF;  /* Blanco */
+    --gris-claro: #f5f5f5;  /* Gris claro para fondo */
+    --gris-oscuro: #333333; /* Gris oscuro para texto */
+    --acento: #FFDD57;  /* Amarillo claro como color de acento */
+}
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--negro);
+    color: var(--blanco);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--morado);
+    margin-bottom: 10px;
+}
+
+/* Enlaces */
+a {
+    color: var(--morado);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--acento);
+}
+
+/* Estilos de párrafos */
+p {
+    color: var(--gris-oscuro);
+    margin-bottom: 20px;
+}
+
+/* Estilos para botones */
+button {
+    background-color: var(--morado);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--acento);
+}
+
+/* Estilos de contenedores */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la cabecera */
+header {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: var(--gris-oscuro);
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
