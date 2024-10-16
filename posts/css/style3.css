@@ -1,0 +1,128 @@
+/* Variables for different themes */
+:root {
+    --bg-color: #000;
+    --text-color: #fff;
+    --accent-color: #8A2BE2; 
+    --sidebar-bg: #1a1a1a;
+    --sidebar-icon-size: 40px;
+}
+
+[data-theme="green"] {
+    --bg-color: #000;
+    --text-color: #fff;
+    --accent-color: #32CD32;
+}
+
+[data-theme="white"] {
+    --bg-color: #f0f0f0;
+    --text-color: #000;
+    --accent-color: #b0b0b0;
+}
+
+[data-theme="gray"] {
+    --bg-color: #1a1a1a;
+    --text-color: #fff;
+    --accent-color: #d3d3d3;
+}
+
+/* General layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg);
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    transition: width 0.3s;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar nav ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Toggle button for sidebar */
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-btn img {
+    width: var(--sidebar-icon-size);
+    height: var(--sidebar-icon-size);
+}
+
+/* Photo feed styles */
+.content {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+    background-color: var(--bg-color);
+    transition: margin-left 0.3s;
+}
+
+.photo-feed {
+    display: flex;
+    flex-direction: column;
+}
+
+.photo-post {
+    margin-bottom: 20px;
+}
+
+.photo-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Theme switcher styles */
+.theme-switcher {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.theme-btn {
+    margin: 5px;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.theme-btn:hover {
+    opacity: 0.8;
+}

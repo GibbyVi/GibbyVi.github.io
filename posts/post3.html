@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Post</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" id="toggle-btn">
+                <img src="assets/icons/slidebar-icon.jpeg" alt="Toggle Sidebar"> <!-- Icon for collapsed state -->
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="assets/others/General.html">General</a></li>
+                    <li><a href="assets/others/about.html">About Me</a></li>
+                    <li><a href="assets/others/contact.html">Contact</a></li>
+                    <li><a href="assets/others/projects.html">Projects</a></li>
+                    <li><a href="assets/others/Beta-C.html/">Beta Content</a></li>
+                </ul>
+            </nav>
+        </div>
 
+        <!-- Main content section -->
+        <div class="content">
+            <header>
+                <h1>Welcome to My Photo Gallery</h1>
+            </header>
+
+            <div class="photo-feed">
+                <div class="photo-post">
+                    <img src="assets/photos/photo1.jpeg" alt="Photo 1">
+                </div>
+                <div class="photo-post">
+                    <img src="assets/photos/photo2.jpeg" alt="Photo 2">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn" data-theme="violet">Violet Theme</button>
+        <button class="theme-btn" data-theme="green">Green Theme</button>
+        <button class="theme-btn" data-theme="white">White Theme</button>
+        <button class="theme-btn" data-theme="gray">Gray Theme</button>
+    </div>
+
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>

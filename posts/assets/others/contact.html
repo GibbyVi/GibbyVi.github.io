@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto">
+    <title>Contact - My Blog</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact me</h1>
+    </header>
+
+    <div class="container">
+        <section id="contact">
+            <h2>Get in touch</h2>
+
+            <div class="contact-box">
+                <p>Email: <span id="email">Anonymousviolette@gmail.com</span></p>
+                <button onclick="copiarTexto('email')">Copy Email</button>
+            </div>
+
+            <div class="contact-box">
+                <p>Teléfono: <span id="cellphone">not available for the moment</span></p>
+                <button onclick="copiarTexto('cellphone')">Copy</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My blog, all rihts reserved.</p>
+    </footer>
+
+    <script>
+        function copiarTexto(id) {
+            var texto = document.getElementById(id).innerText;
+            navigator.clipboard.writeText(texto).then(function() {
+                alert('Texto copiado: ' + texto);
+            }, function(err) {
+                alert('Error al copiar texto');
+            });
+        }
+    </script>
+</body>
+</html>
