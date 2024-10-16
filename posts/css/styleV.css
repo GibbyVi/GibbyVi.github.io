@@ -22,6 +22,7 @@
 
 body {
     display: flex;
+    flex-direction: row;
     margin: 0;
     background-color: var(--bg-black);
     color: var(--text-white);
@@ -39,30 +40,10 @@ body {
     box-shadow: -3px 0 5px var(--sidebar-shadow);
 }
 
-.sidebar h2 {
-    color: var(--purple);
-    text-align: center;
-}
-
-.sidebar a {
-    display: block;
-    color: var(--green);
-    padding: 10px;
-    text-decoration: none;
-    margin-bottom: 10px;
-    background-color: var(--link-bg);
-    border-radius: var(--border-radius);
-    text-align: center;
-}
-
-.sidebar a:hover {
-    background-color: var(--link-hover-bg);
-}
-
 .content {
-    width: calc(100% - var(--sidebar-width));
-    padding: var(--padding);
+    width: calc(100% - var(--sidebar-width)); 
     margin-right: var(--sidebar-width);
+    padding: var(--padding);
 }
 
 .video-player {
@@ -92,6 +73,7 @@ video {
     }
     .content {
         width: 100%;
+        margin-right: 0;
     }
     video {
         height: var(--video-height-small);
