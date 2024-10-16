@@ -60,9 +60,9 @@ body {
 }
 
 .content {
-    width: var(--content-width);
+    width: calc(100% - var(--sidebar-width));
     padding: var(--padding);
-    margin-left: auto;
+    margin-right: var(--sidebar-width);
 }
 
 .video-player {
