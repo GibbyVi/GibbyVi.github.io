@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleV.css">
+    <title>some videos</title>
+</head>
+<body>
+
+    <div class="content">
+        <h1>Video</h1>
+        <div class="video-player">
+            <video id="videoPlayer" controls>
+                <source src="/posts/videos/Vordex-Slowed.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="description">
+            <h3>Descripción del Video</h3>
+            <p>
+                Este es el primer video del post. Puedes hacer clic en los enlaces de la barra lateral para cargar más videos.
+            </p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <h2>Más Videos</h2>
+        <a href="#" onclick="loadVideo('Vordex-Slowed')">Vordex-Slowed</a>
+        <a href="#" onclick="loadVideo('')"></a>
+        <a href="#" onclick="loadVideo('')"></a>
+        <a href="#" onclick="loadVideo('')"></a>
+    </div>
+
+    <script>
+        function loadVideo(videoFile) {
+            var videoPlayer = document.getElementById('videoPlayer');
+            videoPlayer.src = '../posts/videos/' + videoFile;
+            videoPlayer.play();
+        }
+    </script>
+
+</body>
+</html>
