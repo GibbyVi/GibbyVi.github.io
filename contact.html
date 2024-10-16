@@ -4,41 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contacto">
-    <title>Contacto - Mi Blog</title>
+    <title>Contact - My Blog</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Cabecera del blog -->
     <header>
-        <h1>Contacto</h1>
+        <h1>Contact me</h1>
     </header>
 
-    <!-- Contenedor principal -->
     <div class="container">
-        <!-- Sección de contacto -->
         <section id="contact">
-            <h2>Ponte en contacto</h2>
+            <h2>Get in touch</h2>
 
-            <!-- Email -->
             <div class="contact-box">
-                <p>Email: <span id="email">miemail@example.com</span></p>
-                <button onclick="copiarTexto('email')">Copiar Email</button>
+                <p>Email: <span id="email">Anonymousviolette@gmail.com</span></p>
+                <button onclick="copiarTexto('email')">Copy Email</button>
             </div>
 
-            <!-- Número de teléfono -->
             <div class="contact-box">
-                <p>Teléfono: <span id="telefono">+1234567890</span></p>
-                <button onclick="copiarTexto('telefono')">Copiar Teléfono</button>
+                <p>Teléfono: <span id="cellphone">not available for the moment</span></p>
+                <button onclick="copiarTexto('cellphone')">Copy</button>
             </div>
         </section>
     </div>
 
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Mi Blog Personal. Todos los derechos reservados.</p>
+        <p>&copy; 2024 My blog, all rihts reserved.</p>
     </footer>
 
-    <!-- Script para copiar texto -->
     <script>
         function copiarTexto(id) {
             var texto = document.getElementById(id).innerText;
