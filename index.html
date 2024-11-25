@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body>
+    <!-- Botón de alternancia -->
+    <button id="toggleSidebar">Alternar Barras Laterales</button>
+
     <!-- Barra lateral izquierda -->
     <nav class="sidebar left">
         <ul>
@@ -20,20 +23,15 @@
 
     <!-- Contenedor principal -->
     <main>
-        <!-- Encabezado -->
         <header>
             <h1>Modo Oscuro</h1>
         </header>
-
-        <!-- Cuadro de contenido principal -->
         <section class="content">
             <form id="tweetForm">
                 <textarea placeholder="¿Qué estás pensando?" rows="3"></textarea>
                 <button type="submit">Publicar</button>
             </form>
-            <div id="feed">
-                <!-- Los tweets generados dinámicamente aparecerán aquí -->
-            </div>
+            <div id="feed"></div>
         </section>
     </main>
 
