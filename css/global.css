@@ -1,0 +1,23 @@
+:root {
+    --dark-violet: #4B0082;
+    --black: #0D0D0D;
+    --gunmetal-gray: #2A2A2A;
+    --silver: #C0C0C0;
+    --rich-purple: #6A0DAD;
+    --text-color: var(--silver);
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+}

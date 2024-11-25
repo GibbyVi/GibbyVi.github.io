@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+}
+
+header {
+    text-align: center;
+    color: var(--silver);
+    margin-bottom: 20px;
+}
+
+.content {
+    flex: 2;
+    background-color: var(--gunmetal-gray);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border: 1px solid var(--dark-violet);
+    border-radius: var(--border-radius);
+    background-color: var(--black);
+    color: var(--silver);
+}
+
+button {
+    background-color: var(--rich-purple);
+    color: var(--silver);
+    padding: 10px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--dark-violet);
+}

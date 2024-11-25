@@ -1,0 +1,11 @@
+myblog/
+│
+├── index.html        # Archivo principal HTML
+├── css/
+│   ├── global.css    # Estilos generales
+│   ├── layout.css    # Estilos específicos para el diseño
+│   └── sidebar.css   # Estilos para las barras laterales
+├── js/
+│   └── sidebar.js    # Lógica para la interacción de la barra lateral
+└── assets/
+    └── img/          # Carpeta para imágenes (si son necesarias en el futuro)
