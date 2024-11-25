@@ -4,46 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Gótico</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/sidebar-left.css">
+    <link rel="stylesheet" href="css/sidebar-right.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/navigation.js" defer></script>
 </head>
 <body>
-    <!-- Botón de alternancia -->
-    <button id="toggleSidebar">Alternar Barras Laterales</button>
+    <!-- Título/Navegación -->
+    <header id="title">
+        <h1>Proyecto Gótico</h1>
+    </header>
 
     <!-- Barra lateral izquierda -->
-    <nav class="sidebar left">
+    <nav id="sidebar-left">
         <ul>
-            <li><img src="icons/home.ico" alt="Inicio" class="sidebar-icon"></li>
-            <li><img src="icons/explore.ico" alt="Explorar" class="sidebar-icon"></li>
-            <li><img src="icons/settings.ico" alt="Configuración" class="sidebar-icon"></li>
+            <li><img src="icons/home.ico" alt="Inicio"></li>
+            <li><img src="icons/explore.ico" alt="Explorar"></li>
+            <li><img src="icons/settings.ico" alt="Configuración"></li>
         </ul>
     </nav>
 
-    <!-- Contenedor principal -->
-    <main>
-        <header>
-            <h1>Modo Oscuro</h1>
-        </header>
-        <section class="content">
-            <form id="tweetForm">
-                <textarea placeholder="¿Qué estás pensando?" rows="3"></textarea>
-                <button type="submit">Publicar</button>
-            </form>
-            <div id="feed"></div>
+    <!-- Contenido principal -->
+    <main id="main">
+        <!-- Boceto de contenido -->
+        <!-- 
+        <section>
+            <h2>Título del contenido</h2>
+            <p>Descripción del contenido que agregaré en el futuro...</p>
         </section>
+        -->
     </main>
 
     <!-- Barra lateral derecha -->
-    <nav class="sidebar right">
+    <nav id="sidebar-right">
         <ul>
-            <li><img src="icons/trending.ico" alt="Tendencias" class="sidebar-icon"></li>
-            <li><img src="icons/suggestions.ico" alt="Sugerencias" class="sidebar-icon"></li>
+            <li><img src="icons/trending.ico" alt="Tendencias"></li>
+            <li><img src="icons/suggestions.ico" alt="Sugerencias"></li>
         </ul>
     </nav>
-
-    <script src="js/sidebar.js"></script>
 </body>
 </html>

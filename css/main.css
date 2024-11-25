@@ -1,0 +1,24 @@
+/* Contenedor principal */
+#main {
+    margin: 120px auto; /* Asegura espacio para la barra de título */
+    padding: 20px;
+    max-width: 800px;
+    background: rgba(20, 20, 20, 0.9); /* Fondo oscuro */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#main h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #a46eda; /* Tono violeta */
+}
+
+#main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
