@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const leftSidebar = document.querySelector('.sidebar.left');
     const rightSidebar = document.querySelector('.sidebar.right');
+    const mainContent = document.querySelector('main');
     const toggleButton = document.getElementById('toggleSidebar');
     let isExpanded = false;
 
@@ -11,13 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isExpanded) {
             leftSidebar.classList.add('expanded');
             rightSidebar.classList.add('expanded');
+            mainContent.classList.add('expanded-left', 'expanded-right');
         } else {
             leftSidebar.classList.remove('expanded');
             rightSidebar.classList.remove('expanded');
+            mainContent.classList.remove('expanded-left', 'expanded-right');
         }
     });
 
-    // Expande las barras laterales al pasar el mouse
+    // Hover dinámico
     leftSidebar.addEventListener('mouseenter', () => {
         if (!isExpanded) leftSidebar.classList.add('expanded');
     });
