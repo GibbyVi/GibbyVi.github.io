@@ -1,38 +1,45 @@
-/* Barra lateral izquierda */
+/* Sidebar izquierda (navegación vertical) */
 #sidebar-left {
-    position: absolute;
-    top: 100px;
-    left: 20px;
-    width: 50px;
-    background: rgba(50, 0, 70, 0.9); /* Fondo translúcido */
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-    z-index: 500; /* Asegurar que flota sobre el contenido */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #2e2e2e;  /* Fondo oscuro */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 2;  /* Asegura que la barra lateral esté por encima del contenido */
 }
 
 #sidebar-left ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 #sidebar-left li {
-    margin: 15px 0;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-#sidebar-left img {
-    width: 30px;
-    height: 30px;
-    filter: invert(80%);
-    transition: transform 0.2s ease;
+#sidebar-left li img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
 }
 
-#sidebar-left:hover {
-    width: 200px;
+#sidebar-left li:hover {
+    background-color: #444;
 }
 
-#sidebar-left:hover img {
-    transform: scale(1.2);
+/* Para ocultar la barra lateral en dispositivos pequeños (por defecto) */
+@media (max-width: 768px) {
+    #sidebar-left {
+        display: none;  /* Ocultar en dispositivos móviles */
+    }
 }

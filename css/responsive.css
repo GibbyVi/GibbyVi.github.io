@@ -1,0 +1,44 @@
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Estilos generales para el contenedor principal */
+    #main {
+        padding: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: none;  /* Elimina el ancho máximo */
+    }
+
+    /* Ajustes para el título */
+    #title h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Cambiar las barras laterales */
+    #sidebar-left, #sidebar-right {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: none;  /* Ocultar las barras laterales por defecto */
+    }
+
+    #sidebar-left.active, #sidebar-right.active {
+        display: block;  /* Mostrar cuando se activa */
+    }
+
+    /* Botones para mostrar/ocultar las barras laterales */
+    .sidebar-toggle-btn {
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        background-color: #4b3f72;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .sidebar-toggle-btn.right {
+        left: auto;
+        right: 10px;
+    }
+}

@@ -1,25 +1,16 @@
-/* Título o barra de navegación superior */
 #title {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
-    background: #1e0032; /* Color oscuro */
-    color: white;
-    padding: 15px 20px;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
+    background-color: #3a003f;
+    color: #fff;
     text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
     z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    transition: top 0.3s ease;
+    transition: transform 0.3s;
 }
 
 #title.hidden {
-    top: -70px; /* Ocultar cuando se desplaza hacia abajo */
-}
-
-#title h1 {
-    margin: 0;
-    font-size: 24px;
+    transform: translateY(-100%);
 }
