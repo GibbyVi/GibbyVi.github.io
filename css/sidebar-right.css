@@ -1,45 +1,36 @@
-/* Sidebar izquierda (navegación vertical) */
-#sidebar-left {
+#sidebar-right {
+    width: 60px;
+    background-color: #1a1a1a;
     position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px;
-    background-color: #2e2e2e;  /* Fondo oscuro */
-    color: white;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    z-index: 2;  /* Asegura que la barra lateral esté por encima del contenido */
+    top: 60px;
+    right: 0;
+    height: calc(100% - 60px);
+    transition: width 0.3s ease;
+    overflow: hidden;
 }
 
-#sidebar-left ul {
+#sidebar-right.expanded {
+    width: 200px;
+}
+
+#sidebar-right ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
-#sidebar-left li {
-    margin: 20px 0;
-    display: flex;
-    align-items: center;
+#sidebar-right li {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+}
+
+.toggle-btn {
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    margin: 10px;
     cursor: pointer;
-}
-
-#sidebar-left li img {
-    margin-right: 10px;
-    width: 20px;
-    height: 20px;
-}
-
-#sidebar-left li:hover {
-    background-color: #444;
-}
-
-/* Para ocultar la barra lateral en dispositivos pequeños (por defecto) */
-@media (max-width: 768px) {
-    #sidebar-left {
-        display: none;  /* Ocultar en dispositivos móviles */
-    }
 }

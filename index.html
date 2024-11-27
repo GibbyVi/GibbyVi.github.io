@@ -9,38 +9,40 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <script src="js/navigation.js" defer></script>
+    <script src="js/sidebar-toggle.js" defer></script>
 </head>
 <body>
-    <!-- Título/Navegación -->
+    <!-- Título -->
     <header id="title">
-        <h1>twit me</h1>
+        <h1>Twit me</h1>
     </header>
 
     <!-- Barra lateral izquierda -->
-    <aside id="sidebar-left">
+    <aside id="sidebar-left" class="collapsed">
+        <button class="toggle-btn" aria-label="Toggle Sidebar">☰</button>
         <ul>
-            <li><img src="icons/home.ico" alt="Inicio">home</li>
-            <li><img src="icons/explore.ico" alt="Explorar">explore</li>
-            <li><img src="icons/settings.ico" alt="Configuración">settings</li>
+            <li class="icon"><img src="icons/home.ico" alt="Home"></li>
+            <li class="icon"><img src="icons/explore.ico" alt="Explore"></li>
+            <li class="icon"><img src="icons/settings.ico" alt="Settings"></li>
         </ul>
     </aside>
 
     <!-- Contenido principal -->
     <main id="main">
         <section>
-            <h2>test1 - camellya image</h2>
-            <p>that's a thes with one big image...</p>
-            <p>ignore this, it's just text to ocupe space in the twit</p>
-            <img src="assets/img/camellya.png" alt="Camellya image">
+            <h2>Test1 - Camellya Image</h2>
+            <p>This is a test with one big image...</p>
+            <p>Ignore this, it's just text to occupy space in the tweet.</p>
+            <img src="assets/img/camellya.png" alt="Camellya">
         </section>
     </main>
 
     <!-- Barra lateral derecha -->
-    <aside id="sidebar-right">
+    <aside id="sidebar-right" class="collapsed">
+        <button class="toggle-btn" aria-label="Toggle Sidebar">☰</button>
         <ul>
-            <li><img src="icons/trending.ico" alt="Tendencias">trending</li>
-            <li><img src="icons/suggestions.ico" alt="Sugerencias">suggestions</li>
+            <li class="icon"><img src="icons/trending.ico" alt="Trending"></li>
+            <li class="icon"><img src="icons/suggestions.ico" alt="Suggestions"></li>
         </ul>
     </aside>
 </body>

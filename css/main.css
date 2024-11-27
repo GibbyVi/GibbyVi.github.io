@@ -1,26 +1,16 @@
-/* Estilos del contenedor principal */
 #main {
-    margin: 0 auto;
+    margin: 60px auto;
+    max-width: 800px;
     padding: 20px;
-    max-width: 900px;  /* Limita el ancho del contenido */
     background-color: #333;
-    color: white;
-    box-sizing: border-box;
+    color: #fff;
+    border-radius: 10px;
+    overflow: auto;
 }
 
-/* Estilos para cada sección dentro del contenedor principal */
-#main section {
-    margin-bottom: 30px;
-}
-
-#main h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-/* Imágenes dentro del contenedor principal */
 #main img {
-    width: 100%;  /* Redimensiona la imagen para que no desborde el contenedor */
+    max-width: 100%;
     height: auto;
-    margin-top: 20px;
+    display: block;
+    margin: 20px auto;
 }
