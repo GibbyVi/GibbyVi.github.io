@@ -1,0 +1,80 @@
+:root {
+    --sidebar-width-collapsed: 60px;
+    --sidebar-width-expanded: 250px;
+    --sidebar-bg: #1d1d1d;
+    --sidebar-text-color: #fff;
+    --sidebar-hover-color: #9147ff;
+    --transition-speed: 0.3s;
+}
+
+.sidebar-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: var(--sidebar-width-collapsed);
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text-color);
+    overflow: hidden;
+    transition: width var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-left.expanded {
+    width: var(--sidebar-width-expanded);
+}
+
+.toggle-sidebar {
+    margin: 10px;
+    background: none;
+    border: none;
+    color: var(--sidebar-text-color);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar-content {
+    display: none;
+    width: 100%;
+}
+
+.sidebar-left.expanded .sidebar-content {
+    display: block;
+}
+
+.user-options {
+    list-style: none;
+    padding: 10px;
+}
+
+.user-options li a {
+    display: block;
+    padding: 10px;
+    color: var(--sidebar-text-color);
+    text-decoration: none;
+}
+
+.user-options li a:hover {
+    background-color: var(--sidebar-hover-color);
+}
+
+.collaborators {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.collab-profile {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.collab-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

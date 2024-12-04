@@ -12,20 +12,41 @@
     <script src="js/sidebar-toggle.js" defer></script>
 </head>
 <body>
-    <!-- Título -->
-    <header id="title">
+    <header class="main-header">
         <h1>Twit me</h1>
-    </header>
+      </header>
+      <main>
+        <div class="content">
+          <!-- Contenido de prueba para desplazar -->
+          <p>Contenido largo aquí...</p>
+        </div>
+      </main>
 
-    <!-- Barra lateral izquierda -->
-    <aside id="sidebar-left" class="collapsed">
-        <button class="toggle-btn" aria-label="Toggle Sidebar">☰</button>
-        <ul>
-            <li class="icon"><img src="icons/home.ico" alt="Home"></li>
-            <li class="icon"><img src="icons/explore.ico" alt="Explore"></li>
-            <li class="icon"><img src="icons/settings.ico" alt="Settings"></li>
-        </ul>
-    </aside>
+      <div class="sidebar-left">
+        <button class="toggle-sidebar">☰</button>
+        <div class="sidebar-content">
+            <ul class="user-options">
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Opciones</a></li>
+                <li><a href="#">Configuraciones</a></li>
+            </ul>
+            <div class="collaborators">
+                <h4>Colaboradores</h4>
+                <div class="collab-profile">
+                    <img src="assets/sidebar-left/GibbyViolette.png" alt="GibbyVi">
+                    <p>GibbyVi</p>
+                </div>
+                <div class="collab-profile">
+                    <img src="assets/sidebar-left/sys.jpg" alt="Shukensha-sys">
+                    <p>Shukensha-sys</p>
+                </div>
+                <div class="collab-profile">
+                    <img src="assets/sidebar-left/Monarca.jpg" alt="l-Monarca32">
+                    <p>l-Monarca32</p>
+                </div>
+            </div>
+        </div>
+    </div>    
 
     <!-- Contenido principal -->
     <main id="main">
